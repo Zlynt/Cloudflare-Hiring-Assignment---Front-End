@@ -1,0 +1,57 @@
+/* Import Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: white;
+}
+
+#root .navbar {
+  background-color: white !important;
+}
+
+.h7 {
+  font-size: 0.8rem;
+}
+
+.jumbotron {
+  background-color: white !important;
+}
+
+.gedf-card {
+  .card-body {
+    padding: 10px !important;
+    padding-top: 0px !important;
+    background-color: white !important;
+    .nav {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #eeeeee !important;
+    }
+
+    .tab-content {
+      padding: 10px;
+    }
+  }
+}
+
+.gedf-wrapper {
+  margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+  .gedf-main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .gedf-card {
+    background-color: #eeeeee;
+    margin-bottom: 2.77rem;
+  }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+  content: none;
+  display: none;
+}
