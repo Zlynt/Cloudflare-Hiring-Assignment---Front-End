@@ -21,7 +21,7 @@ export const YoutubeTools = {
     }
 };
 
-export default ({ url }) => {
+const YoutubeVideo = ({ url }) => {
     return (
         YoutubeTools.validateYouTubeUrl(url) ?
             <div
@@ -49,3 +49,5 @@ export default ({ url }) => {
             ''
     );
 };
+
+export default YoutubeVideo;

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
-//import $ from 'jquery';
+
+/* Dependencies */
+import {
+    Col,
+    Card,
+    Tabs,
+    Tab,
+    Form,
+    Button,
+    Image
+} from 'react-bootstrap/';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 import YoutubeVideo from './YoutubeVideo';

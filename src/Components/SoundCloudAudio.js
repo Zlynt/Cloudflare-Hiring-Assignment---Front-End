@@ -7,7 +7,7 @@ export const SoundCloudAudioTools = {
     }
 };
 
-export default ({ url }) => {
+const SoundCloudAudio = ({ url }) => {
     return (
         SoundCloudAudioTools.validateSoundCloudUrl(url) ?
             <div
@@ -35,3 +35,5 @@ export default ({ url }) => {
             ''
     );
 };
+
+export default SoundCloudAudio;
