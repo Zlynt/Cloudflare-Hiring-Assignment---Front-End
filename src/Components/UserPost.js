@@ -1,13 +1,16 @@
 import React from 'react';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import Card from 'react-bootstrap/Card';
+/* Dependencies */
+import {
+    Row,
+    Col,
+    Image,
+    Card
+} from 'react-bootstrap';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faHeart, faComment, faShare } from '@fortawesome/free-solid-svg-icons'
-import Moment from 'react-moment';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faClock, faHeart, faComment, faShare } from '@fortawesome/free-solid-svg-icons'
+//import Moment from 'react-moment';
 
 import YoutubeVideo, { YoutubeTools } from './YoutubeVideo';
 import SoundCloudAudio, { SoundCloudAudioTools } from './SoundCloudAudio';
@@ -46,7 +49,7 @@ const UserPost = ({ userName, userDescription, timestamp, title, description, ty
                     </Card.Header>
                     <Card.Body>
                         <div class="text-muted h7 mb-2">
-                            <FontAwesomeIcon icon={faClock} /> <Moment fromNow unix>{timestamp / 1000}</Moment>
+                            {/*<FontAwesomeIcon icon={faClock} /> <Moment fromNow unix>{timestamp / 1000}</Moment>*/}
                         </div>
                         <a class="card-link" href="#">
                             <h5 class="card-title">{title}</h5>
