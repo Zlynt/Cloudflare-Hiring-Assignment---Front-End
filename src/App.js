@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 /* Components */
 import UserPostSubmit from './Components/UserPostSubmit';
+import PostList from './Components/PostList';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Container className="p-3 gedf-wrapper">
         <ToastContainer />
         <UserPostSubmit />
-        {/*<PostList />*/}
+        <PostList />
       </Container>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
-import UserPost from './UserPost';
+//import UserPost from './UserPost';
 
 const PostList = () => {
     const [postList, setPostList] = useState([]);
@@ -50,8 +50,13 @@ const PostList = () => {
 
     return (
         <div>
-            {/*postList.reverse().map((post, index) => {
+            {postList.reverse().map((post, index) => {
                 return (
+                    <div>
+                        {post.content}
+                    </div>
+                )
+                /*return (
                     <UserPost
                         userName={post.username}
                         userDescription={"Random Poster"}
@@ -60,8 +65,8 @@ const PostList = () => {
                         description={post.content}
                         type={post.contentType}
                     />
-                )
-            })*/}
+                )*/
+            })}
         </div>
     );
 }
