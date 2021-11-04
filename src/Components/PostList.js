@@ -33,7 +33,7 @@ const PostList = () => {
                     return;
                 }
 
-                setPostList(posts);
+                setPostList(posts.reverse()); //Show new posts first
                 console.log(posts);
             }).catch(function (error) {
                 console.log(error);
@@ -53,7 +53,7 @@ const PostList = () => {
 
     return (
         <div>
-            {postList.reverse().map((post, index) => {
+            {postList.map((post, index) => {
                 return (
                     <UserPost
                         userName={post.username}

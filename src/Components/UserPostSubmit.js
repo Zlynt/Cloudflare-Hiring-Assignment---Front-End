@@ -64,11 +64,11 @@ const UserPostSubmit = () => {
 
         let theRequest = new Request('https://socialnetwork.zlynt.workers.dev/posts', {
             method: 'POST',
-            headers: new Headers(),
+            headers: new Headers({
+                Accept: "text/plain",
+                "Content-Type": 'application/json'
+            }),
             mode: 'cors',
-            cache: 'default',
-            accept: 'application/json',
-            contentType: 'application/json',
             body: JSON.stringify({
                 "title": event.target[0].value,
                 "content": event.target[2].value === 'image' ? image : event.target[1].value,
