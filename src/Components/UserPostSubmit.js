@@ -72,7 +72,8 @@ const UserPostSubmit = () => {
             body: JSON.stringify({
                 "title": event.target[0].value,
                 "content": event.target[2].value === 'image' ? image : event.target[1].value,
-                "contentType": event.target[2].value
+                "contentType": event.target[2].value,
+                "username": "RandomUser"
             })
         });
         fetch(theRequest).then(function (response) {
