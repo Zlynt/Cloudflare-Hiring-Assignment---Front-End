@@ -34,7 +34,6 @@ const PostList = () => {
                 }
 
                 setPostList(posts.reverse()); //Show new posts first
-                console.log(posts);
             }).catch(function (error) {
                 console.log(error);
             });
